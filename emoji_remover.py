@@ -18,7 +18,9 @@ while True:
     # ファイル名を一括で変更する
     for file in flist:
         #print(file)
+        old_file_name=file
         new_file_name=file.translate(non_bmp_map)
         os.rename(file ,new_file_name)
-
+        if old_file_name != new_file_name:
+            print('変更後:'+new_file_name)
     print("renamed")
