@@ -24,6 +24,6 @@ while True:
         if old_file_name != new_file_name:
             new_file_name_e=new_file_name.encode('cp932', 'ignore')
             new_file_name_d=new_file_name_e.decode('cp932')
-            print(new_file_name+'に変更しました')
+            print(str(file_index) + new_file_name+'に変更しました')
         file_index = file_index + 1
     print("完了")
