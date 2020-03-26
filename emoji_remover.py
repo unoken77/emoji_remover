@@ -28,7 +28,7 @@ while True:
             print(str(file_index)+'番目のファイル名を変更しました')
 
         #bmp外文字を''に置き換える
-        new_file_name2=file.translate(non_bmp_map)
+        new_file_name2=new_file_name.translate(non_bmp_map)
         if new_file_name != new_file_name2:
             print(str(file_index)+"番目のファイルのBMP外の文字を変更しました")
         os.rename(file ,new_file_name2)
